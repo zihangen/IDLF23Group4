@@ -1,0 +1,6 @@
+[submodule "GeneFace"]
+	path = GeneFace
+	url = https://github.com/yerfor/GeneFace.git
+[submodule "syncnet_python"]
+	path = syncnet_python
+	url = https://github.com/joonson/syncnet_python.git

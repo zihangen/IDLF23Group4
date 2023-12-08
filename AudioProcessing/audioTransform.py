@@ -40,7 +40,6 @@ class AudioProcessor: # noises_dir contains noise files, audio_dir contains spee
         self.convert_noise_files()
         self.noise_files = [os.path.join(noises_dir, f) for f in os.listdir(noises_dir) if f.endswith('.wav')]
         self.mode = opt.noise_type
-
     
 
     # creates a clean and a noise dir and return thier paths
@@ -86,7 +85,7 @@ class AudioProcessor: # noises_dir contains noise files, audio_dir contains spee
                         count += 1
                         if num_file != None and count > num_file:
                             break
-        print(len(os.listdir(self.clean_dir)), "files loaded")
+        print(count, "files loaded")
 
                             
                             

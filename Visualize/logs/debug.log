@@ -1,0 +1,20 @@
+[[36m2023-12-08 18:04:39,980[0m][[34m__main__[0m][[32mINFO[0m] - For logs, checkpoints and samples check /home/IDLF23Group4/denoiser/outputs/exp_[0m
+[[36m2023-12-08 18:04:42,767[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - ----------------------------------------------------------------------[0m
+[[36m2023-12-08 18:04:42,768[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Training...[0m
+[[36m2023-12-08 18:05:15,780[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Train | Epoch 1 | 44/220 | 1.4 it/sec | Loss 0.03411[0m
+[[36m2023-12-08 18:05:48,421[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Train | Epoch 1 | 88/220 | 1.4 it/sec | Loss 0.03071[0m
+[[36m2023-12-08 18:06:21,098[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Train | Epoch 1 | 132/220 | 1.4 it/sec | Loss 0.02859[0m
+[[36m2023-12-08 18:06:53,742[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Train | Epoch 1 | 176/220 | 1.4 it/sec | Loss 0.02706[0m
+[[36m2023-12-08 18:07:25,956[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Train | Epoch 1 | 220/220 | 1.4 it/sec | Loss 0.02577[0m
+[[36m2023-12-08 18:07:25,958[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - [1mTrain Summary | End of Epoch 1 | Time 163.19s | Train Loss 0.02577[0m
+[[36m2023-12-08 18:07:25,958[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - ----------------------------------------------------------------------[0m
+[[36m2023-12-08 18:07:25,959[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Cross validation...[0m
+[[36m2023-12-08 18:07:26,938[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 21/106 | 24.7 it/sec | Loss 0.01782[0m
+[[36m2023-12-08 18:07:27,831[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 42/106 | 24.1 it/sec | Loss 0.01837[0m
+[[36m2023-12-08 18:07:29,150[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 63/106 | 20.6 it/sec | Loss 0.01879[0m
+[[36m2023-12-08 18:07:29,937[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 84/106 | 21.9 it/sec | Loss 0.01870[0m
+[[36m2023-12-08 18:07:30,883[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - Valid | Epoch 1 | 105/106 | 21.9 it/sec | Loss 0.01822[0m
+[[36m2023-12-08 18:07:30,944[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - [1mValid Summary | End of Epoch 1 | Time 168.18s | Valid Loss 0.01824[0m
+[[36m2023-12-08 18:07:30,945[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - [1mNew best valid loss 0.0182[0m
+[[36m2023-12-08 18:07:31,024[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - ----------------------------------------------------------------------[0m
+[[36m2023-12-08 18:07:31,025[0m][[34mdenoiser.solver[0m][[32mINFO[0m] - [1mOverall Summary | Epoch 1 | Train 0.02577 | Valid 0.01824 | Best 0.01824[0m

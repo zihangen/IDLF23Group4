@@ -4,3 +4,6 @@
 [submodule "syncnet_python"]
 	path = syncnet_python
 	url = https://github.com/joonson/syncnet_python.git
+[submodule "denoiser"]
+	path = denoiser
+	url = https://github.com/facebookresearch/denoiser

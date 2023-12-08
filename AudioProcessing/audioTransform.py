@@ -14,6 +14,9 @@ parser.add_argument('--noise_files', type=str, default='./noise_files', help='di
 parser.add_argument('--clean_files', type=str, default='./data', help='directory of clean files to process')
 parser.add_argument('--output_dir', type=str, default='./processed_data', help='output directory')
 parser.add_argument('--snr', type=int, default=1, help="snr for noise mixing")
+parser.add_argument('--parsed_clean', type=str, default='')
+parser.add_argument('--parsed_noise', type=str, default='')
+parser.add_argument('--max_len', type=int, default=10000000)
 opt = parser.parse_args()
 
 class ToMono:
@@ -26,7 +29,11 @@ class ToMono:
 
 class AudioProcessor: # noises_dir contains noise files, audio_dir contains speech files
     def __init__(self, noises_dir=opt.noise_files, root=opt.clean_files, sample_rate=16000):
-        self.clean_dir, self.processed_dir = self.create_dir(opt.output_dir) # create the output dir and clean/noisy folders
+        if opt.parsed_clean == '':
+            self.clean_dir, self.processed_dir = self.create_dir(opt.output_dir) # create the output dir and clean/noisy folders
+        else:
+            self.clean_dir = opt.parsed_clean
+            self.processed_dir = opt.parsed_noise
         self.noises_dir = noises_dir
         self.root = root
         self.sample_rate = sample_rate
@@ -199,5 +206,6 @@ if __name__ == "__main__":
     #    if 'flac' in p:
     #        wav_file_path = os.path.join(overlay_dir, f"{i}overlay.wav")
     #        processor.convert_flac_to_wav(p, wav_file_path)
-    processor.convert_flac_files_in_dir(num_file=10)
+    if len(opt.parsed_clean) == 0:
+        processor.convert_flac_files_in_dir(num_file=opt.max_len)
     processor.process_all_files()

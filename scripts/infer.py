@@ -1,4 +1,4 @@
-# this is a inference script to perform 
+# this is a inference script to perform end to end inference
 import sys, os, subprocess
 import argparse
 def run_command(command):

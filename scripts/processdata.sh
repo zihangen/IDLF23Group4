@@ -1,8 +1,9 @@
-ORIGPATH=/home/LibriSpeech/dev-clean
+# supply processeddir and parsedclean to run
+ORIGPATH=/home/LibriSpeech/train-100
 NOISESPATH=/home/IDLF23Group4/AudioProcessing/noises
 snr=0
 NOISETYPE=random
-OUTPUTDIR=/home/IDLF23Group4/ProcessedData/small-valid
+OUTPUTDIR=/home/IDLF23Group4/ProcessedData/
 PROCESSEDDIR=
 PARSEDCLEAN=
 MAXLEN=10

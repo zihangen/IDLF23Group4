@@ -1,3 +1,4 @@
+# this is a inference script to perform 
 import sys, os, subprocess
 import argparse
 def run_command(command):

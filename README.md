@@ -10,7 +10,10 @@ python infer.py --denoiser_model=<path_to_model.th_file> --input_dir=<path_to_in
 then you should see outputted videos in Geneface/infer_out/<target_video_name>/pred_video/ folder  
 
 ## NOTES:  
-If you are setting up the geneface repo for the first time, it will have to run training scripts for a target head video, which could run for a couple hours depending on the video length.(We processed a 4 minute video on a P100 GPU and it took around 4 hours)    
+If you are setting up the geneface repo for the first time, it will have to run training scripts for a target head video, which could run for a couple hours depending on the video length.(We processed a 4 minute video on a P100 GPU and it took around 4 hours). 
+
+## Environments:  
+There are 3 conda environments we created to run the different models and scripts used in our project. It is impossible to combine them into one without reimplementing code for all repositories as they use different versions of python, pytorch, and other packages. Detailed environment configuration could be found in the env/ folder, note that it is recommended to follow the install instructions for each repository and only check these files when you run into error. This is because some of the installations cannnot be installed directly through conda or pip. 
 
 ## Training:
 To train the denoising model to your own specifications or finetune based on an existing model, follow the detailed instructions on https://github.com/facebookresearch/denoiser  

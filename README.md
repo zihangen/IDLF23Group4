@@ -25,6 +25,6 @@ In AudioProcessing/ folder, there is a script called audioTransform to generate 
 to calculate the Syncnet confidence score for one of the videos. you could use the calculate_syncnet.sh file in scripts. Change the following fields:  ORIGNAME='name of original video without extension'  
 NOISYNAME='name of noisy video without extension'  
 OUTNAME='output name'  
-VIDEODIR='directory where the video and noisy video could be found', 
-Or used the python script in scripts/sycnetscore.py. Note that you have to be in the geneface environment to execute this code.
+VIDEODIR='directory where the video and noisy video could be found'  
+Or use the python script in scripts/sycnetscore.py to calculate syncnet scores for a batch of items in a folder. Note that you have to be in the geneface environment to execute this code.
 
